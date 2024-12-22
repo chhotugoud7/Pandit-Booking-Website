@@ -1,14 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../context/AppContext'
-import { categoriesData } from '../assets/assets'
 import { useNavigate, useParams } from 'react-router-dom'
 
 
 
 const Panditji = () => {
-
-  
-  
+   
 const { categories } = useParams();
 const [filterpand, setfilterpand] = useState([]);
 const navigate = useNavigate()
@@ -34,43 +31,12 @@ const applyFilter = () => {
         <div className='flex flex-col gap-5 sm:flex-row items-start mt-5 '>
             <div className='flex flex-col gap-4 text-sm text-black m-2 w-[40vw]'>
 
-
-
-
-        <div className='flex flex-col gap-4 text-sm text-black m-2 w-[40vw]'>
-          {/* Categories list */}
-          {['Prosperity Pujas', 'Grihasth Pujas', 'Vivah Sanskars', 'Festive Pujas', 'Astrological Services', 'Ancestral Pujas'].map(category => (
-            <p
-              key={category}
-              onClick={() => navigate(`/Panditji/${category}`)} // Dynamic navigation to selected category
-              className={`cursor-pointer w-full sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all hover:bg-primary hover:text-white hover:scale-105 ${categories === category ? 'bg-indigo-100 text-black' : ''}`}
-            >
-              {category}
-            </p>
-          ))}
-        </div>
-
-            <p 
-    onClick={() => {
-      if ( categories === 'Prosperity Pujas') {
-        navigate('/Login');
-      } else {
-        navigate('/Panditji/');
-      }
-    }}
-    className={` cursor-pointer    `}
-  >
-    Prosperity Pujas
-  </p>
-  
-
-
-            <p onClick={()=> categories === 'Prosperity Pujas' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 transition-all cursor-pointer text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md hover:bg-primary hover:text-white hover:scale-105 ${categories === "Prosperity Pujas" ? "bg-indigo-100 text-black " : ""}`}>Prosperity Pujas</p>
-            <p onClick={()=> categories === 'Grihasth Pujas' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Grihasth Pujas" ? "bg-indigo-100 text-black " : ""}`}>Grihasth Pujas</p>
-            <p onClick={()=> categories === 'Vivah Sanskars' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Vivah Sanskars" ? "bg-indigo-100 text-black " : ""}`}>Vivah Sanskars</p>
-            <p onClick={()=> categories === 'Festive Pujas' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Festive Pujas" ? "bg-indigo-100 text-black " : ""}`}>Festive Pujas</p>
-            <p onClick={()=> categories === 'Astrological Services' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Astrological Services" ? "bg-indigo-100 text-black " : ""}`}>Astrological Services</p>
-            <p onClick={()=> categories === 'Ancestral Pujas' ? navigate('/Panditji') : navigate('/Panditji/')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Ancestral Pujas" ? "bg-indigo-100 text-black " : ""}`}>Ancestral Pujas</p>
+            <p onClick={()=> categories === 'Prosperity Pujas' ? navigate('/Panditji') : navigate('/Panditji/Prosperity Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 transition-all cursor-pointer text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md hover:bg-primary hover:text-white hover:scale-105 ${categories === "Prosperity Pujas" ? "bg-indigo-100 text-black " : ""}`}>Prosperity Pujas</p>
+            <p onClick={()=> categories === 'Grihasth Pujas' ? navigate('/Panditji') : navigate('/Panditji/Grihasth Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Grihasth Pujas" ? "bg-indigo-100 text-black " : ""}`}>Grihasth Pujas</p>
+            <p onClick={()=> categories === 'Vivah Sanskars' ? navigate('/Panditji') : navigate('/Panditji/Vivah Sanskars')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Vivah Sanskars" ? "bg-indigo-100 text-black " : ""}`}>Vivah Sanskars</p>
+            <p onClick={()=> categories === 'Festive Pujas' ? navigate('/Panditji') : navigate('/Panditji/Festive Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Festive Pujas" ? "bg-indigo-100 text-black " : ""}`}>Festive Pujas</p>
+            <p onClick={()=> categories === 'Astrological Services' ? navigate('/Panditji') : navigate('/Panditji/Astrological Services')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Astrological Services" ? "bg-indigo-100 text-black " : ""}`}>Astrological Services</p>
+            <p onClick={()=> categories === 'Ancestral Pujas' ? navigate('/Panditji') : navigate('/Panditji/Ancestral Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Ancestral Pujas" ? "bg-indigo-100 text-black " : ""}`}>Ancestral Pujas</p>
           </div>
           <div className='w-full grid grid-cols-auto gap-4 gap-y-6'>
             {
