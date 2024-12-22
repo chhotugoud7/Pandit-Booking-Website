@@ -8,9 +8,11 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
 
+    const currencySymbol = '₹'
 
     const value = {
-        pandits
+        pandits,
+        currencySymbol
     }
 
     return (
