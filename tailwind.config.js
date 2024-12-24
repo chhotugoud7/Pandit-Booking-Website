@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: { 
       colors:{
-        'primary': "#FFBF00"
+        'primary': "#FFBF00",
+        'secondary':  "#EE4B2B",
+        'third': "770737"
       },
       animation: {
         'zoom-in-out': 'zoomInOut 3s infinite', // Animation name and duration

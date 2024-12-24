@@ -151,7 +151,7 @@ export const pandits = [
             image: pandit6,
             categories: 'Festive Pujas',
             experience: '1 Years',
-            about: 'Pandit Vishnu Joshi is known for performing grand festive ceremonies like Diwali Laxmi Puja and Navratri Durga Puja with precision and devotion.',
+            about: 'Pandit Deepak Pandey is known for performing grand festive ceremonies like Diwali Laxmi Puja and Navratri Durga Puja with precision and devotion.',
             fees: 5000,
             address: {
                 line1: '67th Cross, Rajajinagar',
