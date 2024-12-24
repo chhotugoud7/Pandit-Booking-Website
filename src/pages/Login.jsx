@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import Loginpage from '../components/Loginpage'
 
 const Login = () => {
   // const [isLogin, setIsLogin] = useState(true);
