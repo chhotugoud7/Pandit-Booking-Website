@@ -16,7 +16,7 @@ const TopPandit = () => {
     <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-5 px-3 sm:px-0'>
         {pandits.slice(0, 9).map((item, index) => (
             <div 
-                onClick={() => navigate(`/PoojaBooking/${item._id}`)} 
+                onClick={() => {navigate(`/PoojaBooking/${item._id}`) ; scrollTo(0,0)}} 
                 className='border-black border-2 rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-lg transition-all duration-500 group' 
                 key={index}
               

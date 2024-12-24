@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../context/AppContext'
 import { useParams } from 'react-router-dom'
 import { assets } from '../assets/assets'
+import RelatedPandits from '../components/RelatedPandits'
 
 const PoojaBooking = () => {
 
@@ -151,6 +152,9 @@ const PoojaBooking = () => {
 
             <button className='bg-primary text-white text-sm fonnt-light px-14 py-3 rounded-full my-6'>Book An Pooja</button>
         </div>
+
+        {/* --------------Listing Related Pandits------------ */}
+        <RelatedPandits panditId={panditId} categories={panditInfo.categories} />
         
     </div>
   )

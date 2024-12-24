@@ -21,6 +21,7 @@ import pandit3 from './pandit3.png'
 import pandit4 from './pandit4.png'
 import pandit5 from './pandit5.png'
 import pandit6 from './pandit6.jpg'
+import pandit7 from './pandit7.avif'
 import FestivePujas from './FestivePujas.jpg'
 import satyanarayan from './satyanarayan.jpg'
 import GrihasthPujas from './Grihasth (Household) Pujas.jpg'
@@ -153,6 +154,20 @@ export const pandits = [
             experience: '1 Years',
             about: 'Pandit Deepak Pandey is known for performing grand festive ceremonies like Diwali Laxmi Puja and Navratri Durga Puja with precision and devotion.',
             fees: 5000,
+            address: {
+                line1: '67th Cross, Rajajinagar',
+                line2: 'Jaipur, Rajasthan'
+            }
+        },
+
+        {
+            _id: 'P7',
+            name: 'Pandit Ankit Sharma',
+            image: pandit7,
+            categories: 'Festive Pujas',
+            experience: '2.5 Years',
+            about: 'Pandit Ankit Sharma is known for performing grand festive ceremonies like Diwali Laxmi Puja and Navratri Durga Puja with precision and devotion.',
+            fees: 11000,
             address: {
                 line1: '67th Cross, Rajajinagar',
                 line2: 'Jaipur, Rajasthan'
