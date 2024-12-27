@@ -5,15 +5,7 @@ const Footer = () => {
     return (
         <div className='mt-40'>
             <div>
-                {/* <video 
-            class="w-[105%] h-full object-cover -mb-1.25" 
-            autoplay 
-            muted 
-            playsinline 
-            loop
-        >
-            <source src="./src/assets/footer-animaton.mp4" type="video/mp4" />
-             </video> */}
+               
 
                 <video width="105%" height="100%" autoPlay muted playsInline loop disablePictureInPicture
                     controlsList="nodownload nofullscreen noremoteplayback"  >

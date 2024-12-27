@@ -5,7 +5,7 @@ const mantra = () => {
   return (
     <div>
          
-       <div class="puja-section" id="puja">
+       {/* <div class="puja-section" id="puja">
             <h2 class="puja-section-heading">वैदिक संस्कृति वैदिक संस्कार</h2>
 
             <div class="puja-container">
@@ -90,7 +90,7 @@ const mantra = () => {
                 </div>
 
             </div>
-       </div>
+       </div> */}
       
 
 
