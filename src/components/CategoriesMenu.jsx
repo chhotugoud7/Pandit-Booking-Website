@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom'
 
 const CategoriesMenu = () => {
   return (
-    <div className='flex flex-col items-center gap-4 py-16 text-gray-800' id='categories'>
+    <div className='flex flex-col items-center gap-4 py-8 px-2 md:py-16 text-gray-800' id='categories'>
         <h1 className='text-3xl font-medium'>Find Pandit For Any Puja By Categories</h1>
         <p className='sm:w-1/3 text-center text-sm'>Simply browse through our categoris list in which  you can find the proper puja pandit</p>
 
 
 
-        <div className="flex flex-wrap justify-center gap-10 py-10 w-full overflow-scroll">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-10 py-4 md:py-10 w-full overflow-scroll">
             {categoriesData.map((item, index) => (
             <Link
                 onClick={()=>scrollTo(0,0)}
                 key={index}
                 to={`Panditji/${item.categories}`}
-                className="relative group w-[30%] sm:w-[25%] md:w-[22%] bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
+                className="relative group w-[45%] sm:w-[25%] md:w-[22%] bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
                 >
                 <div className="overflow-hidden">
                     <img

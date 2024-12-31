@@ -5,11 +5,11 @@ const Header = () => {
   return (
     <div className='py-2'>
 
-        <div class="bg-cover bg-center bg-[url('./src/assets/om-backgroung.jpg')] py-40 flex flex-wrap items-center justify-center gap-80">
+        <div class="bg-cover bg-center bg-[url('./src/assets/om-backgroung.jpg')] py-16 md:py-40 flex flex-wrap items-center justify-center gap-14 md:gap-80">
             <div className=''>
-                <img className=' w-60 ' src="./src/assets/om.png" alt="" />
+                <img className=' w-20 sm:w-60'  src="./src/assets/om.png" alt="" />
             </div>
-            <div className=' '>
+            <div >
                 <p className='text-3xl pb-5 md:text-4xl lg:text-5xl text-white font-semibold leading-tight md:leading-tight lg:leading-tight animate-zoom-in-out' >
                     Book A Puja Now</p>
 

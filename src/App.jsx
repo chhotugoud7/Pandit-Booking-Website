@@ -14,7 +14,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className=' sm:max-[10%]'>
+    <div className=' sm:max-[10%] overflow-x-hidden'>
       
       <Navbar />
     <Routes>

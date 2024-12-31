@@ -3,9 +3,9 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
     return (
-        <div className='mt-40'>
+        <div className=' mt-10 md:mt-40'>
             <div>
-               
+
 
                 <video width="105%" height="100%" autoPlay muted playsInline loop disablePictureInPicture
                     controlsList="nodownload nofullscreen noremoteplayback"  >
@@ -13,18 +13,18 @@ const Footer = () => {
                 </video>
 
             </div>
-            <div className="bg-cover bg-center bg-[url('./src/assets/om-backgroung.jpg')] py-20 px-20 flex flex-col
-         items-center justify-center gap-20 sm:grid grid-cols-[3fr_1fr_1fr]">
+            <div className="bg-cover bg-center bg-[url('./src/assets/om-backgroung.jpg')] py-5 md:py-20 px-5 md:px-20 flex flex-col
+         items-center justify-center gap-10 md:gap-20 sm:grid grid-cols-[3fr_1fr_1fr]">
                 <div>
                     {/* ---------------left section ------------------- */}
-                    <img className='mb-5 w-40' src={assets.logo} alt="" />
+                    <img className='mb-5 w-20 md:w-40' src={assets.logo} alt="" />
                     {/* <p className='text-lg text-white font-bold'>Jai Shree Ram</p> */}
 
                 </div>
                 <div>
                     {/* ---------------MIDDLE section ------------------- */}
-                    <p className='text-xl font-medium mb-5 text-black underline'>Site Links</p>
-                    <ul className='flex flex-col gap-2 font-bold text-back'>
+                    <p className='text-xl font-medium mb-5 text-black underline text-center'>Site Links</p>
+                    <ul className='flex flex-col gap-2 font-bold text-back justify-center items-center'>
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Contact Us</li>
@@ -33,10 +33,10 @@ const Footer = () => {
                 </div>
                 <div>
                     {/* ---------------right section ------------------- */}
-                    <p className='text-xl font-medium mb-5 text-black underline'>Get In Touch</p>
+                    <p className='text-xl font-medium mb-5 text-black underline text-center' >Get In Touch</p>
                     <ul className='flex flex-col gap-2 font-bold text-back' >
-                        <li>+91 9988778899</li>
-                        <li>panditbooking@gmial.com</li>
+                        <li className='text-center'>+91 9988778899</li>
+                        <li className='text-center'>panditbooking@gmial.com</li>
                     </ul>
                 </div>
             </div>

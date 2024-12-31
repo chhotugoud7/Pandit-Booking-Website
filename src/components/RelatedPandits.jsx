@@ -20,9 +20,9 @@ const RelatedPandits = ({categories, panditId}) => {
 
 
   return (
-    <div className='flex flex-col items-center gap-10 my-20 px-40 text-gray-900 md:mx-10 sd:px-10'>
-    <h1 className='text-3xl font-medium'>Top Pandit Ji</h1>
-    <p className='sm:w-1/3 text-center text-sm'>Simply browse through the top pandit ji list to get best pandit ji for pujas.</p>
+    <div className='flex flex-col items-center gap-4 md:gap-10 my-10 md:my-20 px-2 text-gray-900 md:mx-10 sd:px-10'>
+    <h1 className='text-3xl font-medium'>Related Pandit Ji</h1>
+    <p className='sm:w-1/3 text-center text-sm'>Simply browse through the Related Top Pandit ji list to get best pandit ji for this category pujas.</p>
 <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-5 px-3 sm:px-0'>
     {relPandits.slice(0, 3).map((item, index) => (
         <div 
@@ -50,7 +50,7 @@ const RelatedPandits = ({categories, panditId}) => {
         </div>
     ))}
 </div>
-<button onClick={()=>{ navigate ('/Panditji'); scrollTo(0,0) }} className='flex items-center justify-center gap-2 bg-orange-400 px-40 py-3 rounded-full text-white font-bold text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>More</button>
+<button onClick={()=>{ navigate ('/Panditji'); scrollTo(0,0) }} className='flex items-center justify-center gap-2 bg-orange-400 px-10 md:px-40 py-3 rounded-full text-white font-bold text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>More</button>
 </div>
 
   )

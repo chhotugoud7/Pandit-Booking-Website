@@ -8,6 +8,7 @@ const Panditji = () => {
    
 const { categories } = useParams();
 const [filterpand, setfilterpand] = useState([]);
+const [showFilter, setShowFilter] = useState(false)
 const navigate = useNavigate()
 
 const { pandits } = useContext(AppContext)
@@ -29,8 +30,8 @@ const applyFilter = () => {
 
         <p className='text-orange-400 text-center text-lg font-medium bg-white p-3   hover:text-black hover:scale-105'>Browse through the best pandits accross website</p>
         <div className='flex flex-col gap-5 sm:flex-row items-start mt-5 '>
-            <div className='flex flex-col gap-4 text-sm text-black m-2 w-[40vw]'>
-
+            <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={()=>setShowFilter(prev => !prev)}>Filters</button>
+            <div className={` flex-col gap-4 text-sm text-black m-2 w-[40vw] ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
             <p onClick={()=> categories === 'Prosperity Pujas' ? navigate('/Panditji') : navigate('/Panditji/Prosperity Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 transition-all cursor-pointer text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md hover:bg-primary hover:text-white hover:scale-105 ${categories === "Prosperity Pujas" ? "bg-indigo-100 text-black " : ""}`}>Prosperity Pujas</p>
             <p onClick={()=> categories === 'Grihasth Pujas' ? navigate('/Panditji') : navigate('/Panditji/Grihasth Pujas')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Grihasth Pujas" ? "bg-indigo-100 text-black " : ""}`}>Grihasth Pujas</p>
             <p onClick={()=> categories === 'Vivah Sanskars' ? navigate('/Panditji') : navigate('/Panditji/Vivah Sanskars')} className={`w-[100vw] sm:w-auto pl-3 py-3 pr-16 border border-gray-300 text-center text-gray-600 text-lg font-medium bg-white p-3 rounded-lg shadow-md transition-all cursor-pointer hover:bg-primary hover:text-white hover:scale-105 ${categories === "Vivah Sanskars" ? "bg-indigo-100 text-black " : ""}`}>Vivah Sanskars</p>

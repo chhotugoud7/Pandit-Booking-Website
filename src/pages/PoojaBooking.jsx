@@ -89,7 +89,7 @@ const PoojaBooking = () => {
   },[panditSlots])
 
   return panditInfo && (
-    <div className='mx-10 mt-2'>
+    <div className=' mx-2 md:mx-10 mt-2'>
         {/* ---------------Pandit Details-------------------- */}
         <div className='flex flex-col sm:flex-row gap-4'>
           <div>
