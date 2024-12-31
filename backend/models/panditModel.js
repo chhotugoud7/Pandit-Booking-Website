@@ -18,4 +18,4 @@ const panditSchema = new mongoose.Schema({
 
 const panditModel = mongoose.models.pandit || mongoose.model('pandit',panditSchema)
 
-export default doctorModel
+export default panditModel
