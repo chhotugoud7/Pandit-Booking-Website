@@ -8,7 +8,7 @@ const panditSchema = new mongoose.Schema({
     categories: {type:String, required:true},
     experience: {type:String, required:true},
     about: {type:String, required:true},
-    available: {type:Boolean, required:true},
+    available: {type:Boolean, default:true},
     fees: {type:Number, required:true},
     address: {type:Object, required:true},
     date: {type:Number, required:true},
