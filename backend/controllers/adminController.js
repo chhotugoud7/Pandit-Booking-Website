@@ -9,7 +9,18 @@ const addPandit = async (req, res) => {
 
     try{
         const { name, email, password, categories, experience, about, fees, address } = req.body
-        const imageFile = req.File
+        // const imageFile = req.File
+
+        // Make sure the file is uploaded correctly
+        // if (!req.file) {
+        //     return res.json({ success: false, message: "No image uploaded" });
+        // }
+
+        // // Get the image file's path
+        // const imageFile = req.file.path;
+
+        // You can now access imageFile.path, which will give you the file path of the uploaded image
+        // console.log("Uploaded Image Path:", imageFile.path);
 
         //checking for all data to add pandit
         if(!name || !email || !password || !categories || !experience || !about || !fees || !address ) {
